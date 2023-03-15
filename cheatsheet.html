@@ -2,12 +2,148 @@
 
 <html>
     <head>
-        title
+        <link href="cheatsheet.css" type="text/css" rel="stylesheet">
+        <title>Cheatsheet</title>
     </head>
     <body>
+        <h1>Changing the Box Model, Display & Positioning*</h1>
+        <ul>
+            <li>The default <span class="code">box-sizing</span> value is <span class="code">content-box</span>.</li>
+                <ul>
+                    <li>Say your content is 300 x 200, but once you add up your padding and border values, the *actual* size may be 362 x 248. This can make larger websites difficult to control & style.</li>
+                </ul>
+            <li>With <span class="code">border-box</span>, the height & width you set doesn't change.</li>
+                <ul>
+                    <li>Helpful when needing to keep an element within its parent container.</li>
+                    <li>Can be applied to individual rulesets, or the whole page with <span class="code">*</span> wildcard.</li>
+                </ul>
+            <li>A document with no CSS styling will render L-&gt;R, T-&gt;B, in the same order as they exist in the document.</li>
+            <li>Properties for how a browser positions elements:</li>
+                <ul>
+                    <li>
+                        <span class="code">position:</span>
+                        <span class="code">display:</span>
+                        <span class="code">z-index:</span>
+                        <span class="code">float:</span>
+                        <span class="code">clear:</span>
+                    </li>
+                </ul>
+            <li>Block-level elements create a block the full width of its parent element, and prevent other elements from occupying the same horizontal space.</li>
+            <li>The default position can be changed by setting its <span class="code">position:</span> property.</li>
+        </ul>
+        <table>    
+            <thead>
+                <th>Property</th>
+                <th>Value</th>
+                <th>Description</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td rowspan="2">
+                        <span class="code">box-sizing:</span>
+                    </td>
+                    <td>
+                        <span class="code">content-box;</span>
+                    </td>
+                    <td>Width & height settings apply to the content, padding & margin values add onto the total size.</td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="code">border-box;</span>
+                    </td>
+                    <td>Width & height settings apply to the whole element. Content shrinks to accomodate padding & margin values.</td>
+                </tr>
+                <tr>
+                    <td rowspan="5">
+                        <span class="code">position:</span>
+                    </td>
+                    <td>
+                        <span class="code">static;</span>
+                    </td>
+                    <td>The default setting.</td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="code">relative;</span>
+                    </td>
+                    <td>Positions an element relative to its default position (left). Must be accompanied by a value (px, em, %) assigned to <span class="code">top</span>, <span class="code">bottom</span>, <span class="code">left</span>, or <span class="code">right</span>.</td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="code">abolute;</span>
+                    </td>
+                    <td>All other elements on the page will ignore it and act like it's not present on the page. Will be positioned relative to its closest positioned parent element. Offset properties can be used to further position the element.</td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="code">fixed;</span>
+                    </td>
+                    <td>Same as <span class="code">abolute</span>, but element will remain fixed to its position regardless of user scrolling.</td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="code">sticky;</span>
+                    </td>
+                    <td>Similar to <span class="code">abolute</span> & <span class="code">fixed</span>, except it remains in the document flow. Stays in position until user scrolls, then it "sticks" to its position.</td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="code">z-index:</span>
+                    </td>
+                    <td>+/- integer</td>
+                    <td>Controls how far back/forward an element should appear when elements overlap. Value is any +/- integer; default value is 0. *Does not work on static elements*</td>
+                </tr>
+                <tr>
+                    <td rowspan="3">
+                        <span class="code">display:</span>
+                    </td>
+                    <td>
+                        <span class="code">inline;</span>
+                    </td>
+                    <td>Can share horizontal space with another element. Cannot be altered in size with <span class="code">width</span> or <span class="code">height</span>. Elements with this default value: <span class="code">&lt;em&gt;</span>, <span class="code">&lt;strong&gt;</span>, <span class="code">&lt;a&gt;</span>, <span class="code">&lt;span&gt;</span>, etc.</td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="code">block;</span>
+                    </td>
+                    <td>Only allows this element in the horizontal space. Elements with this default value: <span class="code">&lt;h1&gt;</span>-<span class="code">&lt;h6&gt;</span>, <span class="code">&lt;p&gt;</span>, <span class="code">&lt;div&gt;</span>, <span class="code">&lt;footer&gt;</span>, etc.</td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="code">inline-block;</span>
+                    </td>
+                    <td>Can share horizontal space with another element. Can be altered in size with <span class="code">width</span> or <span class="code">height</span>.</td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="code">float:</span>
+                    </td>
+                    <td>
+                        <span class="code">left;</span>
+                        <span class="code">right;</span>
+                    </td>
+                    <td>Used to move an element as far L/R as possible within the container. Must have a <span class="code">width</span>value or it will take up the whole horizontal space. Helpful for wrapping text around an image. *Note: Moving elements L/R is better suited for tools like CSS Grid & Flexbox.</td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="code">clear:</span>
+                        </td>
+                    <td>
+                        <span class="code">left;</span>
+                        <span class="code">right;</span>
+                        <span class="code">both;</span>
+                        <span class="code">none;</span>
+                    </td>
+                    <td>Specifies how elements should behave when they bump into each other on the page. Value determines what side *will not* touch any other element within the container.</td>
+                </tr>
+            </tbody>
+            <tfoot>
 
+            </tfoot>
+        </table>
     </body>
-    <foot>
-
-    </foot>
+    <footer>
+        <p>*"Build your own cheatsheet" assignment designed to test basic knowledge of HTML and CSS properties.</p>
+        <p>Requirements: Create a cheatsheet based on a HTML/CSS subject, based on your notes. Make use of a table. Use special formatting for code.</p>
+    </footer>
 </html>
