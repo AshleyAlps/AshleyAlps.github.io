@@ -14,14 +14,21 @@ html {
 
 h1 {
     padding: 25px 100px;
+    margin: 0 auto;
+    width: 65%;
     text-align: center;
     background: lightsteelblue;
     border-radius: 25px;
     font-size: 50px;
 }
 
+ul {
+    width: 80%;
+    margin: 0 auto;
+}
+
 table {
-    width: 75%;
+    width: 65%;
     margin: 0 auto;
     background: lightsteelblue;
     border-radius: 10px;
