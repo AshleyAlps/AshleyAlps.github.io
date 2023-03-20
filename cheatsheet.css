@@ -12,6 +12,10 @@ html {
     background-color: rgba(102, 51, 153, 0.217);
 }
 
+a {
+    text-decoration: none;
+}
+
 h1 {
     padding: 25px 100px;
     margin: 0 auto;
@@ -50,4 +54,12 @@ td {
     font-family: monospace;
     background: lightsteelblue;
     color: black;
+}
+
+#back {
+    position: fixed;
+    text-align: center;
+    width: 50px;
+    background-color: lightsteelblue;
+    border-radius: 10px;
 }
