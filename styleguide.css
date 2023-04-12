@@ -1,0 +1,172 @@
+* {
+    font-family: sans-serif;
+}
+
+html {
+    margin: 0 15px;
+    max-width: 700px;
+}
+
+/* Font Import */
+
+@font-face {
+    font-family: "indie_flower";
+    src: url('IndieFlower-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: "athiti";
+    src: url('Athiti-ExtraLight.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: "patrick";
+    src: url('PatrickHandSC-Regular.ttf') format('truetype');
+}
+
+/* Main Elements */
+
+#back {
+    position: fixed;
+    top: 25px;
+    right: 25px;
+    text-align: center;
+    width: 50px;
+    border-radius: 10px;
+    background-color:#000d17;
+    opacity: 0.5;
+    padding: 5px;
+}
+
+#back:hover {
+    opacity: 1;
+}
+
+a {
+    text-decoration: none;
+    color:#9ea2af;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+h2 {
+    font-size: 35px;
+}
+
+h3 {
+    font-size: 23px;
+}
+
+p {
+    font-size: 18px;
+}
+
+footer {
+    background-color:#9ea2af;
+    color:#223656;
+    text-align: right;
+    padding: 65px 15px 15px;
+}
+
+p.athiti {
+    margin-bottom: 60px;
+}
+
+/* Table Styling*/
+
+table {
+    text-align: center;
+}
+
+table.colors {
+    margin: 0 auto;
+}
+
+.colors td {
+    padding: 0 15px;
+    border-radius: 5px;
+    font-family: monospace;
+    font-size: 15px;
+}
+
+.swatch {
+    width: 50px;
+    height: 40px;
+}
+
+table.wcag {
+    margin: 0 auto;
+    font-size: 25px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+}
+
+.wcag td {
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Font & Color */
+
+h3.fonts {
+    font-size: 40px;
+}
+
+.tc1 {
+    color:#000d17;
+}
+
+.tc2 {
+    color:#223656;
+}
+
+.tc3 {
+    color:#9ea2af;
+}
+
+.tc4 {
+    color:#9d8a58
+}
+
+.bc1 {
+    background-color:#000d17;
+}
+
+.bc2 {
+    background-color:#223656;
+}
+
+.bc3 {
+    background-color:#9ea2af;
+}
+
+.bc4 {
+    background-color:#9d8a58;
+}
+
+.indie {
+    font-family:'indie_flower';
+}
+
+.athiti {
+    font-family:'athiti';
+}
+
+.patrick {
+    font-family:'patrick';
+}
+
+.caps {
+    text-transform: uppercase;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.lg {
+    font-size: 25px;
+    line-height: 25px;
+}
