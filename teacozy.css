@@ -1,0 +1,199 @@
+/* Global Styling */
+
+html
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: black;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    background-color: black;
+    color: seashell;
+    font-family: Helvetica;
+    text-align: center;
+}
+
+/* Back Button */
+
+#back {
+    position: fixed;
+    top: 40px;
+    left: 25px;
+    text-align: center;
+    width: 50px;
+    border-radius: 10px;
+    background-color: seashell;
+    color: seashell;
+    padding: 5px;
+    z-index: 2;
+}
+
+p a {
+    text-decoration: none;
+    font-family: Helvetica;
+    color: black;
+}
+
+
+/* Nav Styling */
+
+header {
+    display: flex;
+    position: sticky;
+    top: 0;
+    background-color: black;
+    width: 100%;
+    height: 69px;
+    border-bottom: 1px solid seashell;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+}
+
+a.nav {
+    margin: 0 10px;
+    font-family: Helvetica;
+    font-size: 22px;
+    font-weight: light;
+    color: seashell;
+    text-decoration: underline;
+    opacity: 0.9;
+}
+
+img.nav {
+    height: 50px;
+    margin: auto 10px;
+}
+
+/* Mission Styling */
+
+div.mission {
+    background-image: url('img-mission-background.jpg');
+    max-width: 1200px;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto 75px;
+}
+
+h2.mission,
+h4.mission {
+    margin: 0;
+    padding: 10px;
+    opacity: 0.9;
+}
+
+/* Featured Styling */
+
+div.featured {
+    max-width: 1000px;
+    margin: 0 auto 75px;
+}
+
+h2.featured,
+h4.featured {
+    margin: 0 0 10px;
+}
+
+div.itemlist {
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+div.items {
+    display: flex;
+    flex-direction: column;
+}
+
+.items img {
+    height: 200px;
+    width: 300px;
+    margin: 10px;
+}
+
+.items h4 {
+    margin: 0;
+}
+
+/* Locations Styling */
+
+div.locations {
+    background-image: url('img-locations-background.jpg');
+    width: 1200px;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+div.locblocks {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 60px 0 0;
+}
+
+div.blocks {
+    display: inline-flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+div.address {
+    display: inline-flex;
+    align-items: center;
+    flex-direction: column;
+    flex-grow: 1;
+    min-width: 300px;
+    background-color: black;
+    color: seashell;
+    font-size: 22px;
+    font-family: Helvetica;
+    margin: 0 20px;
+    padding: 0 5px;
+    opacity: 0.9;
+    flex-wrap: wrap;
+}
+
+div.contact {
+    display: flex;
+    flex-direction: column;
+    height: 125px;
+    background-color: black;
+    opacity: 0.9;
+    align-content: flex-start;
+}
+
+h2.locations {
+    background-color: transparent;
+    width: 1200px;
+}
+
+.contact h2,
+.contact h5{
+    margin: 10px 0;;
+}
+
+/* Footer Styling */
+
+.cpyrt {
+    text-align: left;
+    position: relative;
+    left: 20px;
+}
+
+footer p {
+    color: seashell;
+    font-family: Helvetica;
+    text-align: left;
+    position: relative;
+    left: 20px;
+}
