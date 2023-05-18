@@ -38,9 +38,11 @@ html {
 
 header {
   position: fixed;
+  z-index: 1; /* + */
   width: 100%;
   border-bottom: solid 1px #c6c1c1;
   background-color: white;
+  height: 5.3125rem; /* 85px */
 }
 
 header .content {
@@ -51,6 +53,9 @@ header .content {
 
 header .logo {
   flex: 1;
+  font-family: 'Roboto Mono', monospace; /* + */
+  font-size: 1.5rem; /* 24px */
+  color:#4a4a4a; /* + */
 }
 
 header nav ul {
@@ -117,13 +122,20 @@ header .mobile {
   justify-content: flex-start;
   align-items: flex-start;
   height: 43.5rem;
+  background-image: url('../images/banner-landingpage.jpg'); /* + */
+  background-position: center; /* + */
+  background-size: cover; /* + */
+  background-repeat: no-repeat; /* + */
 }
 
 #sign-up-cta {
+  position: relative; /* + */
+  top: 25%; /* 170px */
+  left: 7%; /* 100px */
   padding: 0 5rem 2.5rem 5rem;
   border: solid 1px #979797;
   border-radius: 4px;
-  background-color: #9dc20b;
+  background-color: #9dc20a; /* edit color code */
 }
 
 #sign-up-cta .content {
