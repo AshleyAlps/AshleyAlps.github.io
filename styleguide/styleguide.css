@@ -26,25 +26,9 @@ html {
 
 /* Main Elements */
 
-#back {
-    position: fixed;
-    top: 25px;
-    right: 25px;
-    text-align: center;
-    width: 50px;
-    border-radius: 10px;
-    background-color:#000d17;
-    opacity: 0.5;
-    padding: 5px;
-}
 
 #back:hover {
     opacity: 1;
-}
-
-a {
-    text-decoration: none;
-    color:#9ea2af;
 }
 
 h1 {
