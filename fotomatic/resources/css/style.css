@@ -21,11 +21,13 @@ html {
 }
 
 .image-container {
+  width: 100%;
   overflow: hidden;
 }
 
 .image-container img {
   display: block;
+  max-width: 100%; /* + to constrict images to containers */
 }
 
 @media only screen and (max-width: 760px) {
@@ -224,20 +226,21 @@ header .mobile {
 #features-section {
   display: flex;
   justify-content: space-between;
-  padding: 4rem 5%;
+  padding: 4rem 3% 2.875rem; /* adjust container margins */
   background-color: #f3f3f3;
 }
 
 .feature {
   flex: 1;
-  padding: 2rem;
-  margin: 0px 1.25rem;
+  padding: 2rem; /* 32px */
+  margin: 0px 1.1875rem; /* 19px */
   background-color: white;
 }
 
 .feature .image-container {
-  width: 90%;
+  width: 100%; /* change to look more like polaroid */
   height: 65%;
+  padding-bottom: 40px; /* + */
   margin: 0 auto;
 }
 
